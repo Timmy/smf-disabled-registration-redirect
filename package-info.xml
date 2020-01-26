@@ -1,0 +1,23 @@
+<!DOCTYPE package-info SYSTEM "http://www.simplemachines.org/xml/package-info">
+<package-info xmlns="http://www.simplemachines.org/xml/package-info" xmlns:smf="http://www.simplemachines.org/">
+	<id>Demogorgon:DisabledRegistrationRedirect</id>
+	<name>Disabled Registration Redirect</name>
+	<version>1.0.0</version>
+	<type>modification</type>
+
+	<install for="2.0 - 2.0.99">
+		<readme type="file" parsebbc="true">readme-english.txt</readme>
+		<require-file name="DisabledRegistrationRedirect.english.php" destination="$languagedir" />
+		<require-file name="DisabledRegistrationRedirect.english-utf8.php" destination="$languagedir" />
+		<require-file name="DisabledRegistrationRedirect.php" destination="$sourcedir" />
+		<code>add_remove_hooks.php</code>
+		<redirect url="?action=admin;area=modsettings" />
+	</install>
+
+	<uninstall for="2.0 - 2.0.99">
+		<remove-file name="$languagedir/DisabledRegistrationRedirect.english.php" />
+		<remove-file name="$languagedir/DisabledRegistrationRedirect.english-utf8.php" />
+		<remove-file name="$sourcedir/DisabledRegistrationRedirect.php" />
+		<code>add_remove_hooks.php</code>
+	</uninstall>
+</package-info>
