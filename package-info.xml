@@ -7,6 +7,8 @@
 
 	<install for="2.0 - 2.0.99">
 		<readme type="file" parsebbc="true">readme-english.txt</readme>
+		<require-file name="DisabledRegistrationRedirect.dutch.php" destination="$languagedir" />
+		<require-file name="DisabledRegistrationRedirect.dutch-utf8.php" destination="$languagedir" />
 		<require-file name="DisabledRegistrationRedirect.english.php" destination="$languagedir" />
 		<require-file name="DisabledRegistrationRedirect.english-utf8.php" destination="$languagedir" />
 		<require-file name="DisabledRegistrationRedirect.php" destination="$sourcedir" />
@@ -15,6 +17,8 @@
 	</install>
 
 	<uninstall for="2.0 - 2.0.99">
+		<remove-file name="$languagedir/DisabledRegistrationRedirect.dutch.php" />
+		<remove-file name="$languagedir/DisabledRegistrationRedirect.dutch-utf8.php" />
 		<remove-file name="$languagedir/DisabledRegistrationRedirect.english.php" />
 		<remove-file name="$languagedir/DisabledRegistrationRedirect.english-utf8.php" />
 		<remove-file name="$sourcedir/DisabledRegistrationRedirect.php" />
