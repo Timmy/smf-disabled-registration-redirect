@@ -11,6 +11,8 @@
 		<require-file name="DisabledRegistrationRedirect.dutch-utf8.php" destination="$languagedir" />
 		<require-file name="DisabledRegistrationRedirect.english.php" destination="$languagedir" />
 		<require-file name="DisabledRegistrationRedirect.english-utf8.php" destination="$languagedir" />
+		<require-file name="DisabledRegistrationRedirect.russian.php" destination="$languagedir" />
+		<require-file name="DisabledRegistrationRedirect.russian-utf8.php" destination="$languagedir" />
 		<require-file name="DisabledRegistrationRedirect.php" destination="$sourcedir" />
 		<code>add_remove_hooks.php</code>
 		<redirect url="?action=admin;area=modsettings" />
@@ -21,6 +23,8 @@
 		<remove-file name="$languagedir/DisabledRegistrationRedirect.dutch-utf8.php" />
 		<remove-file name="$languagedir/DisabledRegistrationRedirect.english.php" />
 		<remove-file name="$languagedir/DisabledRegistrationRedirect.english-utf8.php" />
+		<remove-file name="$languagedir/DisabledRegistrationRedirect.russian.php" />
+		<remove-file name="$languagedir/DisabledRegistrationRedirect.russian-utf8.php" />
 		<remove-file name="$sourcedir/DisabledRegistrationRedirect.php" />
 		<code>add_remove_hooks.php</code>
 	</uninstall>
