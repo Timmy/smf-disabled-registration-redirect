@@ -1,0 +1,8 @@
+name: PHP_CodeSniffer Action
+description: GitHub Action for detecting violations of a defined coding standard.
+runs:
+  using: docker
+  image: Dockerfile
+branding:
+  color: green
+  icon: code

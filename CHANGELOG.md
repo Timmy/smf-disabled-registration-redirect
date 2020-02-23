@@ -2,6 +2,7 @@
 
 ### Added
 
+- PHP_CodeSniffer CI
 - README in Markdown format
 - License information
 - Changelog
