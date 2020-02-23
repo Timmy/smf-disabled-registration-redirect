@@ -1,4 +1,5 @@
 <?php
+
 /* Spanish translation https://www.bombercode.net Copyright 2014-2019 */
 
 $txt['disabled_registration_redirect_title'] = 'Redireccionamiento de registro deshabilitado';

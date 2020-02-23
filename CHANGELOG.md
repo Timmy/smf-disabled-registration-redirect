@@ -7,6 +7,10 @@
 - License information
 - Changelog
 
+## Changed
+
+- Start following [PSR-12 coding style](https://www.php-fig.org/psr/psr-12/)
+
 ## [1.1.0] - 2020-02-11
 
 ### Added

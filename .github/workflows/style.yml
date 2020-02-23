@@ -8,11 +8,7 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v2
-      - name: Configure PHP_CodeSniffer
-        uses: ./.github/actions/phpcs-action
-        with:
-          args: '--config-set ignore_warnings_on_exit 1'
       - name: Run PHP_CodeSniffer
         uses: ./.github/actions/phpcs-action
         with:
-          args: '--standard=PSR12 .'
+          args: '--standard=PSR12 --runtime-set ignore_warnings_on_exit 1 .'
